@@ -1,0 +1,25 @@
+{
+    "closeOnFocusLoss": false,
+    "considerPreedit": false,
+    "faviconService": "twenty",
+    "font": {
+        "normal": "TX-02",
+        "size": 9
+    },
+    "keybinding": "default",
+    "keybinds": {
+    },
+    "popToRootOnClose": true,
+    "rootSearch": {
+        "searchFiles": false
+    },
+    "theme": {
+        "iconTheme": "Papirus-Dark",
+        "name": "monokai-pro-spectrum"
+    },
+    "window": {
+        "csd": false,
+        "opacity": 1,
+        "rounding": 10
+    }
+}

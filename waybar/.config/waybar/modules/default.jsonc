@@ -1,0 +1,144 @@
+{
+  "clock": {
+    "format": "󰥔 {:%a %d - %H:%M}",
+    "tooltip": false,
+  },
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "󰮯",
+      "persistent": "",
+      "empty": "",
+      "urgent": "󰊠"
+    },
+    "persistent-workspaces": {
+      "*": 6,
+    },
+  },
+
+  "temperature": {
+    "interval": 10,
+    "format": "{icon} {temperatureC}°",
+    "critical-threshold": 80,
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": " {}%",
+  },
+
+  "memory": {
+    "interval": 30,
+    "format": " {used:0.1f}G",
+  },
+
+  "mpris": {
+    "format": " {artist} - {title}",
+    "tooltip-format": "{album}",
+    "format-paused": " {artist} - {title}",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "max-length": 45,
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "{icon}",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "headphone-muted": "󰟎",
+      "headset-muted": "󰟎",
+      "default": ["", ""],
+      "default-muted": "󰖁",
+    },
+    "scroll-step": 2,
+    "tooltip": false,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"],
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+  },
+
+  "network": {
+    "interface": "wlp192s0",
+    "interval": 10,
+    "format-wifi": " {bandwidthDownBits}  {bandwidthUpBits} ",
+    //   "format-wifi": "{essid} ",
+    "format-ethernet": "󰈀 {ipaddr}/{cidr}",
+    "format-disconnected": "",
+    "tooltip-format": "{ifname} via {gwaddr} 󰈀",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "menu": "on-click",
+    "menu-file": "~/.config/waybar/menus/network.xml",
+    "menu-actions": {
+      "action-1": "hyprctl dispatch exec ~/.local/bin/network_disconnect",
+      "action-2": "hyprctl dispatch exec ~/.local/bin/network_reconnect",
+      "action-3": "hyprctl dispatch exec nm-connection-editor",
+    },
+  },
+
+  "bluetooth": {
+    "format": "{}",
+    "format-on": "󰂰",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "{device_alias}   {device_battery_percentage}%",
+    "tooltip-format": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t {device_battery_percentage}%",
+    "on-click": "~/.local/bin/toggle_bluetooth.py &",
+    "on-click-right": "hyprctl dispatch exec blueman-manager",
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 15,
+    "cursor": true,
+  },
+
+  "power-profiles-daemon": {
+    "format": "<span size='10pt'>{icon}</span>",
+    "tooltip-format": "Power profile: {profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "󱟢",
+      "performance": "󰂅",
+      "balanced": "󱟢",
+      "power-saver": "󱈏",
+    },
+  },
+
+  "backlight": {
+    "scroll-step": 2,
+    "format": "{icon} {percent}%",
+    "tooltip-format": "{percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+    ],
+  },
+}

@@ -1,0 +1,21 @@
+[meta]
+version = 1
+name = "Monokai Pro Spectrum"
+description = "Vicinae Theme using Monokai Pro Spectrum colors"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+background = "#222222"
+foreground = "#f7f1ff"
+secondary_background = "#191919"
+border = "#363537"
+accent = "#948ae3"
+
+[colors.accents]
+blue = "#5ad4e6"
+green = "#7bd88f"
+orange = "#fd9353"
+purple = "#948ae3"
+red = "#fc618d"
+yellow = "#fce566"
