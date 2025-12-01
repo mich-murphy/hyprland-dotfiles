@@ -41,3 +41,6 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 # Fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# Ripgrep
+export RIPGREP_CONFIG_PATH="$ZDG_CONFIG_HOME/ripgrep"
