@@ -26,6 +26,7 @@ interception-caps2esc
 kvantum
 lazygit
 libva-utils
+loupe
 luarocks
 man-pages
 nautilus
@@ -40,7 +41,6 @@ perl-image-exiftool
 polkit-gnome
 power-profiles-daemon
 qt6-wayland
-ristretto
 sassc
 selectdefaultapplication-git
 snap-pac-grub
@@ -51,6 +51,7 @@ swaync
 swww
 tailscale
 tealdeer
+texlive-binextra
 tree
 tree-sitter-cli
 udiskie
