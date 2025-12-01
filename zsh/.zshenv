@@ -49,7 +49,7 @@ fg:#a9b1d6,\
 fg+:#c0caf5,\
 border:#1a1b26,\
 spinner:#3b4261,\
-hl:7dcfff,\
+hl:#7dcfff,\
 header:#e0af68,\
 info:#7aa2f7,\
 pointer:#7aa2f7,\
