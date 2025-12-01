@@ -1,0 +1,7 @@
+# Case insesitive unless pattern contains uppercase characters
+--smart-case
+
+# Search hidden files by default, but not git
+--hidden
+--glob
+!.git
