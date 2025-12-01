@@ -38,9 +38,38 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 # GTK 2
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 
+# Ripgrep
+export RIPGREP_CONFIG_PATH="$ZDG_CONFIG_HOME/ripgrep"
+
 # Fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# Ripgrep
-export RIPGREP_CONFIG_PATH="$ZDG_CONFIG_HOME/ripgrep"
+export FZF_COLORS="bg+:#1a1b26,\
+fg:#a9b1d6,\
+fg+:#c0caf5,\
+border:#1a1b26,\
+spinner:#3b4261,\
+hl:7dcfff,\
+header:#e0af68,\
+info:#7aa2f7,\
+pointer:#7aa2f7,\
+marker:#f7768e,\
+prompt:#a9b1d6,\
+hl+:#7aa2f7"
+export FZF_DEFAULT_OPTS="--height 60 \
+--border none \
+--layout reverse \
+--color '$FZF_COLORS' \
+--prompt '∷ ' \
+--pointer ▶ \
+--marker ⇒"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -n 10'"
+export FZF_CTRL_T_OPTS="--height 60 \
+--border none \
+--layout reverse \
+--color '$FZF_COLORS' \
+--prompt '∷ ' \
+--pointer ▶ \
+--marker ⇒
+--preview 'bat --color=always {}' \
+--preview-window '~2',border-none"
