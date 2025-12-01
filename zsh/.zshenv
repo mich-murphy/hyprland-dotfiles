@@ -73,3 +73,11 @@ export FZF_CTRL_T_OPTS="--height 60 \
 --marker ⇒
 --preview 'bat --color=always {}' \
 --preview-window '~2',border-none"
+export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree ls"
+
+# Less
+export LESS="--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-target=4 --LONG-PROMPT \
+--no-init --quit-if-one-screen --RAW-CONTROL-CHARS --use-color --window=4"
+
+# BTRFS snapshots synced with grub
+export SNAP_PAC_GRUB_ASYNC=1
