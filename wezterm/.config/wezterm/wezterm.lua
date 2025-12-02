@@ -114,7 +114,7 @@ config.colors = {
   },
 }
 config.font = wezterm.font("TX-02")
-config.font_size = 11.0
+config.font_size = 10.0
 config.use_dead_keys = false
 config.window_decorations = "RESIZE"
 config.adjust_window_size_when_changing_font_size = false
