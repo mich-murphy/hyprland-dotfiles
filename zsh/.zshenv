@@ -13,7 +13,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # Default editor
 export EDITOR="nvim"
 export VISUAL="nvim"
-export TERMINAL="ghostty"
+export TERMINAL="wezterm"
 export BROWSER="firefox"
 
 # Zsh config files
@@ -39,7 +39,7 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 
 # Ripgrep
-export RIPGREP_CONFIG_PATH="$ZDG_CONFIG_HOME/ripgrep"
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/ripgreprc"
 
 # Fzf
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
