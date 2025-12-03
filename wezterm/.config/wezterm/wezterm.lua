@@ -28,14 +28,6 @@ config.keys = {
 	{ key = " ", mods = "LEADER", action = wezterm.action.QuickSelect },
 	{ key = "w", mods = "LEADER", action = wezterm.action.ShowTabNavigator },
 	{
-		key = "L",
-		mods = "CTRL|SHIFT",
-		action = wezterm.action.Multiple({
-			wezterm.action.ClearScrollback("ScrollbackAndViewport"),
-			wezterm.action.SendKey({ key = "L", mods = "CTRL" }),
-		}),
-	},
-	{
 		key = ",",
 		mods = "LEADER",
 		action = wezterm.action.PromptInputLine({
