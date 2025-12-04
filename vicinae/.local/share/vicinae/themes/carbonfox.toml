@@ -1,0 +1,19 @@
+[meta]
+version = 1
+name = "Carbonfox"
+description = "Vicinae Theme using Carbonfox colors"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+background = "#161616"
+foreground = "#f2f4f8"
+secondary_background = "#282828"
+border = "#282828"
+accent = "#be95ff"
+
+[colors.accents]
+blue = "#33b1ff"
+green = "#25be6a"
+purple = "#be95ff"
+red = "#ee5396"

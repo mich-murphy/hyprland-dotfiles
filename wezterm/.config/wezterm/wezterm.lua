@@ -1,5 +1,6 @@
 local wezterm = require("wezterm")
 local smart_splits = wezterm.plugin.require("https://github.com/mrjones2014/smart-splits.nvim")
+local colorscheme = require("colorscheme")
 local config = wezterm.config_builder()
 
 -- Show which key table is active in the status area
@@ -76,35 +77,7 @@ config.use_fancy_tab_bar = false
 config.switch_to_last_active_tab_when_closing_tab = true
 
 -- General
-config.colors = {
-  foreground = "#f7f1ff",
-  background = "#222222",
-  cursor_bg = "#bab6c0",
-  cursor_fg = "#bab6c0",
-  cursor_border = "#bab6c0",
-  selection_fg = "#f7f1ff",
-  selection_bg = "#525053",
-  ansi = {
-    "#222222",
-    "#fc618d",
-    "#7bd88f",
-    "#fce566",
-    "#fd9353",
-    "#948ae3",
-    "#5ad4e6",
-    "#f7f1ff",
-  },
-  brights = {
-    "#69676c",
-    "#fc618d",
-    "#7bd88f",
-    "#fce566",
-    "#fd9353",
-    "#948ae3",
-    "#5ad4e6",
-    "#f7f1ff",
-  },
-}
+colorscheme.apply_to_config(config)
 config.font = wezterm.font("TX-02")
 config.font_size = 10.0
 config.use_dead_keys = false

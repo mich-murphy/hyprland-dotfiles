@@ -1,19 +1,4 @@
-/* Monokai Pro Spectrum */
-@define-color  background #222222;
-@define-color  foreground #f7f1ff;
-@define-color  comment #8b888f;
-@define-color  border #363537;
-@define-color  red #fc618d;
-@define-color  orange #fd9353;
-@define-color  yellow #fce566;
-@define-color  green #7bd88f;
-@define-color  blue #5ad4e6;
-@define-color  purple #948ae3;
-@define-color  light-grey #bab6c0;
-@define-color  grey #69676c;
-@define-color  dark-grey #525053;
-@define-color  dark #191919;
-@define-color  darker #131313;
+@import "colorscheme.css";
 
 * {
     border: none;

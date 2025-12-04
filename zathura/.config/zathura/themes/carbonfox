@@ -1,0 +1,35 @@
+# Carbonfox color theme for Zathura
+#
+set notification-error-bg "#ee5396"
+set notification-error-fg "#f2f4f8"
+set notification-warning-bg "#08bdba"
+set notification-warning-fg "#484848"
+set notification-bg "#161616"
+set notification-fg "#f2f4f8"
+set completion-bg "#161616"
+set completion-fg "#dfdfe0"
+set completion-group-bg "#161616"
+set completion-group-fg "#dfdfe0"
+set completion-highlight-bg "#484848"
+set completion-highlight-fg "#f2f4f8"
+set index-bg "#161616"
+set index-fg "#f2f4f8"
+set index-active-bg "#484848"
+set index-active-fg "#f2f4f8"
+set inputbar-bg "#161616"
+set inputbar-fg "#f2f4f8"
+set statusbar-bg "#161616"
+set statusbar-fg "#f2f4f8"
+set highlight-color "#08bdba"
+set highlight-active-color "#25be6a"
+set default-bg "#161616"
+set default-fg "#f2f4f8"
+set render-loading true
+set render-loading-fg "#161616"
+set render-loading-bg "#f2f4f8"
+#
+# Recolor mode settings
+# <C-r> to switch modes
+#
+set recolor-lightcolor "#161616"
+set recolor-darkcolor "#f2f4f8"

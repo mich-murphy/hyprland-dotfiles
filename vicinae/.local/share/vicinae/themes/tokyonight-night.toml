@@ -1,0 +1,21 @@
+[meta]
+version = 1
+name = "Tokyonight Night"
+description = "Vicinae Theme using Tokyonight Night colors"
+variant = "dark"
+inherits = "vicinae-dark"
+
+[colors.core]
+background = "#1a1b26"
+foreground = "#c0caf5"
+secondary_background = "#414868"
+border = "#414868"
+accent = "#bb9af7"
+
+[colors.accents]
+blue = "#7aa2f7"
+green = "#9ece6a"
+teal = "#7dcfff"
+purple = "#bb9af7"
+red = "#f7768e"
+yellow = "#e0af68"

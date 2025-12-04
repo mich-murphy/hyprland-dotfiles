@@ -1,0 +1,9 @@
+/* Carbonfox */
+@define-color background      #161616;
+@define-color text            #f2f4f8;
+@define-color text-alt        #484848;
+@define-color background-alt  #2a2a2a;
+@define-color selected        #78a9ff;
+@define-color hover           #6e6f70;
+@define-color urgent          #ee5396;
+@define-color accent          #be95ff;

@@ -73,7 +73,8 @@ function zvm_config() {
   ZVM_VI_SURROUND_BINDKEY=s-prefix
 }
 
-source "$XDG_CONFIG_HOME/zsh/aliases"
+source "$XDG_CONFIG_HOME/zsh/aliases.zsh"
+source "$ZDOTDIR/colorscheme.zsh"
 source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source /usr/share/zsh/plugins/zsh-autopair/autopair.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -83,6 +84,28 @@ source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
 if [[ $options[zle] = on ]]; then
   source <(/usr/bin/fzf --zsh)
 fi
+
+# Fzf
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS="--height 60 \
+--border none \
+--layout reverse \
+--color '$FZF_COLORS' \
+--prompt '∷ ' \
+--pointer ▶ \
+--marker ⇒"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -n 10'"
+export FZF_CTRL_T_OPTS="--height 60 \
+--border none \
+--layout reverse \
+--color '$FZF_COLORS' \
+--prompt '∷ ' \
+--pointer ▶ \
+--marker ⇒
+--preview 'bat --color=always {}' \
+--preview-window '~2',border-none"
+export FZF_COMPLETION_DIR_COMMANDS="cd pushd rmdir tree ls"
 
 # Zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
