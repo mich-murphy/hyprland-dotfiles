@@ -47,3 +47,5 @@ export LESS="--chop-long-lines --HILITE-UNREAD --ignore-case --incsearch --jump-
 
 # BTRFS snapshots synced with grub
 export SNAP_PAC_GRUB_ASYNC=1
+
+export PATH="$PATH:/home/mm/.local/bin"
