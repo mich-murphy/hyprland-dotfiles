@@ -77,7 +77,7 @@ wezterm)
 ghostty)
   echo -e "${CYAN}-> Applying terminal theme...${NC}"
   cp "$THEME_DIR/ghostty/colorscheme" "$DOTFILES/ghostty/.config/ghostty/colorscheme" >/dev/null 2>&1
-  cd "$DOTFILES" && stow wezterm
+  cd "$DOTFILES" && stow ghostty
   # pgrep ghostty | xargs -r kill -SIGUSR1 >/dev/null 2>&1
   echo ""
   ;;
