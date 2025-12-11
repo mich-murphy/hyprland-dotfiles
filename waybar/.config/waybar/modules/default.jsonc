@@ -8,12 +8,17 @@
     "format": "{icon}",
     "format-icons": {
       "active": "󰮯",
-      "persistent": "",
       "empty": "",
-      "urgent": "󰊠"
+      "default": "",
+      "urgent": "󰊠",
     },
+    "sort-by-number": true,
     "persistent-workspaces": {
-      "*": 6,
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
     },
   },
 
