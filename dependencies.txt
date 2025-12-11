@@ -17,6 +17,7 @@ fwupd
 ghostty
 git-delta
 go
+grub-btrfs
 gtk-engine-murrine
 hypridle
 hyprland
@@ -24,7 +25,6 @@ hyprlock
 hyprpicker
 hyprsunset
 interception-caps2esc
-kvantum
 lazygit
 libva-utils
 loupe
@@ -42,11 +42,14 @@ pavucontrol
 perl-image-exiftool
 polkit-gnome
 power-profiles-daemon
+qt5ct
 qt6-wayland
+qt6ct
+rofi
 rsync
 sassc
 selectdefaultapplication-git
-snap-pac-grub
+snap-pac
 sof-firmware
 starship
 stow
@@ -60,6 +63,7 @@ texlive-latexextra
 tree
 tree-sitter-cli
 udiskie
+ufw
 uv
 vicinae-bin
 waybar
