@@ -43,7 +43,8 @@
       "text": "Do not disturb"
     },
     "mpris": {
-      "autohide": true
+      "autohide": true,
+      "show-album-art": "when-available"
     },
     "title": {
       "text": "Notification Center",
