@@ -9,6 +9,7 @@ bluez-utils
 brightnessctl
 btop
 direnv
+displaylink
 eza
 file-roller
 firefox
@@ -50,6 +51,7 @@ rsync
 sassc
 selectdefaultapplication-git
 snap-pac
+socat
 sof-firmware
 starship
 stow
