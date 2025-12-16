@@ -80,14 +80,14 @@ for i = 1, 8 do
 end
 
 -- Tab bar
-config.hide_tab_bar_if_only_one_tab = false
+config.hide_tab_bar_if_only_one_tab = true
 config.use_fancy_tab_bar = false
 config.switch_to_last_active_tab_when_closing_tab = true
 
 -- General
 colorscheme.apply_to_config(config)
 config.font = wezterm.font("TX-02")
-config.font_size = 10.0
+config.font_size = 9.3
 config.use_dead_keys = false
 config.adjust_window_size_when_changing_font_size = false
 config.window_close_confirmation = "NeverPrompt"
