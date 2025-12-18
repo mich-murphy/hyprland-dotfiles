@@ -1,0 +1,4 @@
+[global]
+strict_env = true
+warn_timeout = "20s"
+log_filter = "^$"
