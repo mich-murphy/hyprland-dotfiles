@@ -1,5 +1,6 @@
 1password
 acpi
+adobe-source-code-pro-fonts
 amd-ucode
 base
 bat
@@ -65,6 +66,9 @@ texlive-fontsextra
 texlive-latexextra
 tree
 tree-sitter-cli
+ttf-fira-code
+ttf-hack
+ttf-jetbrains-mono
 udiskie
 ufw
 uv
