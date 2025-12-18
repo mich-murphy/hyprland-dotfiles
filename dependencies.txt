@@ -31,6 +31,7 @@ libva-utils
 loupe
 luarocks
 man-pages
+mermaid-cli
 mpv
 nautilus
 network-manager-applet
