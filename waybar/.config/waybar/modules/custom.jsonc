@@ -32,8 +32,8 @@
     "menu-actions": {
       "shutdown": "systemctl poweroff",
       "reboot": "systemctl reboot",
-      "logout": "hyprctl dispatch exit",
-      "lock": "hyprctl dispatch exec hyprlock",
+      "logout": "niri msg action quit",
+      "lock": "niri msg action spawn -- hyprlock",
       "notifications": "swaync-client -t -sw",
     },
   },
