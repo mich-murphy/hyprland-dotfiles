@@ -9,6 +9,8 @@ blueman
 bluez-utils
 brightnessctl
 btop
+cava
+cliphist
 direnv
 displaylink
 eza
@@ -29,17 +31,19 @@ hyprsunset
 interception-caps2esc
 lazygit
 libva-utils
+localsend-bin
 loupe
 luarocks
 man-pages
+matugen
 mermaid-cli
 mpv
-nautilus
 network-manager-applet
 nwg-look
 openbsd-netcat
 owncloud-client
 pacman-contrib
+pandoc-cli
 papirus-folders
 pavucontrol
 perl-image-exiftool
@@ -58,7 +62,7 @@ sof-firmware
 starship
 stow
 swaync
-swww
+sysc-greet
 tailscale
 tealdeer
 texlive-binextra
@@ -73,7 +77,6 @@ udiskie
 ufw
 uv
 vicinae-bin
-waybar
 wev
 wezterm-nightly-bin
 wget

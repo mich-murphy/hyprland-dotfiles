@@ -23,10 +23,10 @@ tooltip label {
 
 #custom-launcher,
 #clock,
-#workspaces,
 #temperature,
 #cpu,
 #memory,
+#workspaces,
 #custom-notification,
 #mpris,
 #bluetooth,
@@ -51,17 +51,12 @@ tooltip label {
   color: @comment;
 }
 
-#workspaces {
-  margin-left: 0;
-  padding-left: 0;
-  padding-right: 5px;
-}
-
-#workspaces .workspace-label {
+#workspaces button {
   color: @foreground;
+  padding: 5px 10px 5px 0;
 }
 
-#workspaces button.active .workspace-label {
+#workspaces button.active {
   color: @purple;
   transition: all 0.3s ease;
 }
