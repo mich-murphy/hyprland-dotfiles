@@ -49,24 +49,24 @@ WORKING_DIRECTORY = os.getcwd()
 class Application(Enum):
     """Allowed applications along with specification of theme files."""
 
-    hyprland = {
-        "name": "hypr",
-        "source": f"{THEME_PATH}/hypr/colorscheme.conf",
-        "target": f"{DOTFILES_PATH}/hypr/.config/hypr/colorscheme.conf",
-        "stow": True,
-    }
+    # hyprland = {
+    #     "name": "hypr",
+    #     "source": f"{THEME_PATH}/hypr/colorscheme.conf",
+    #     "target": f"{DOTFILES_PATH}/hypr/.config/hypr/colorscheme.conf",
+    #     "stow": True,
+    # }
     waybar = {
         "name": "waybar",
         "source": f"{THEME_PATH}/waybar/colorscheme.css",
         "target": f"{DOTFILES_PATH}/waybar/.config/waybar/colorscheme.css",
         "stow": True,
     }
-    swaync = {
-        "name": "swaync",
-        "source": f"{THEME_PATH}/swaync/colorscheme.css",
-        "target": f"{DOTFILES_PATH}/swaync/.config/swaync/colorscheme.css",
-        "stow": True,
-    }
+    # swaync = {
+    #     "name": "swaync",
+    #     "source": f"{THEME_PATH}/swaync/colorscheme.css",
+    #     "target": f"{DOTFILES_PATH}/swaync/.config/swaync/colorscheme.css",
+    #     "stow": True,
+    # }
     wezterm = {
         "name": "wezterm",
         "source": f"{THEME_PATH}/wezterm/colorscheme.lua",
@@ -148,12 +148,12 @@ def reload_applications() -> None:
         stderr=subprocess.DEVNULL,
     )
     subprocess.Popen("waybar", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    subprocess.run(
-        ["killall", "-9", "swaync"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-    )
-    subprocess.Popen("swaync", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    # subprocess.run(
+    #     ["killall", "-9", "swaync"],
+    #     stdout=subprocess.DEVNULL,
+    #     stderr=subprocess.DEVNULL,
+    # )
+    # subprocess.Popen("swaync", stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     # pgrep_wezterm = subprocess.run(
     #     ["pgrep", "wezterm"],
     #     capture_output=True,
