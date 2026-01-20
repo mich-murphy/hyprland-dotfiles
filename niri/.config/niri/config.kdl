@@ -8,6 +8,7 @@ input {
     touchpad {
         tap
         natural-scroll
+        scroll-factor 0.5
     }
     mouse {
         // off
@@ -22,10 +23,19 @@ input {
 }
 
 output "eDP-1" {
-    mode "1920x1080@120.030"
+    mode "2880x1920@120.000"
     scale 2
     transform "normal"
-    position x=1280 y=0
+    position x=0 y=1440
+    variable-refresh-rate on-demand=true
+}
+
+output "DVI-I-1" {
+    focus-at-startup
+    mode "3440x1440@59.973"
+    scale 1
+    transform "normal"
+    position x=0 y=0
     variable-refresh-rate on-demand=true
 }
 
@@ -92,6 +102,7 @@ window-rule {
 window-rule {
     match app-id="firefox"
     match app-id="chromium"
+    match app-id="Zotero"
     open-maximized true
 }
 
@@ -104,7 +115,6 @@ spawn-at-startup "swww-daemon"
 spawn-at-startup "udiskie"
 spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &"
 spawn-sh-at-startup "nm-applet --indicator"
-spawn-sh-at-startup "vicinae server"
 
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
