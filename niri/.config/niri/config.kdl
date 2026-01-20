@@ -126,7 +126,7 @@ binds {
     Mod+Space        hotkey-overlay-title="Run an Application: vicinae"   { spawn "vicinae" "toggle"; }
     Mod+Shift+Space  hotkey-overlay-title="Search Clipboard: vicinae"     { spawn "vicinae" "vicinae://extensions/vicinae/clipboard/history"; }
     Super+X          hotkey-overlay-title="Lock the Screen: hyprlock"     { spawn "hyprlock"; }
-    Super+Shift+X          hotkey-overlay-title="Logout"                  { quit; }
+    Super+Shift+X    hotkey-overlay-title="Logout"                        { quit; }
     
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
