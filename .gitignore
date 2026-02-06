@@ -3,3 +3,4 @@
 **/vicinae.json
 vicinae/.local/*
 !vicinae/.local/share/vicinae/themes
+**/fish/conf.d
