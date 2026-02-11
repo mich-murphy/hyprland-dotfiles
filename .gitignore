@@ -4,3 +4,4 @@
 vicinae/.local/*
 !vicinae/.local/share/vicinae/themes
 **/fish/conf.d
+rofi/.local/share/rofi/rofi_calc_history

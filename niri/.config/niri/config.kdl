@@ -127,7 +127,8 @@ binds {
     Mod+Return       hotkey-overlay-title="Open a Terminal: wezterm"      { spawn "wezterm"; }
     Mod+Shift+Return hotkey-overlay-title="Open a Browser: firefox"       { spawn "firefox"; }
     Mod+E            hotkey-overlay-title="Open a File Browser: nautilus" { spawn "nautilus"; }
-    Mod+Space        hotkey-overlay-title="Run an Application: rofi"   { spawn-sh "pkill rofi || rofi -show drun -theme ~/.local/share/rofi/minimal.rasi"; }
+    Mod+Space        hotkey-overlay-title="Run an Application: rofi"      { spawn-sh "pkill rofi || rofi -show drun -theme ~/.local/share/rofi/minimal.rasi"; }
+    Mod+C            hotkey-overlay-title="Run an Calculator: rofi"       { spawn-sh "pkill rofi || rofi -show calc -modi calc -no-show-match -no-sort -calc-command \"echo -n '{result}' | wl-copy\" -theme ~/.local/share/rofi/minimal.rasi"; }
     Super+X          hotkey-overlay-title="Lock the Screen: hyprlock"     { spawn "hyprlock"; }
     Super+Shift+X    hotkey-overlay-title="Logout"                        { quit; }
     Mod+O repeat=false { toggle-overview; }
