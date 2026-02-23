@@ -1,0 +1,11 @@
+max-visible=10
+layer=top
+font=TX-02 10
+background-color=#1a1b26
+text-color=#c0caf5
+border-color=#414868
+border-radius=0
+max-icon-size=48
+default-timeout=3000
+anchor=top-right
+margin=0

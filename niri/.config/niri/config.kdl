@@ -27,7 +27,7 @@ input {
 }
 
 output "DVI-I-1" {
-    mode "3440x1440@59.973"
+    mode "3440x1440"
     scale 1
     transform "normal"
     position x=0 y=0
@@ -37,9 +37,20 @@ output "DVI-I-1" {
     }
 }
 
-output "DP-4" {
-    mode "1920x1080@74.973"
+output "DP-10" {
+    mode "1920x1080"
     scale 1
+    transform "normal"
+    position x=1920 y=0
+    variable-refresh-rate on-demand=true
+    hot-corners {
+      off
+    }
+}
+
+output "DP-9" {
+    mode "2560x1440"
+    scale 1.33
     transform "normal"
     position x=0 y=0
     variable-refresh-rate on-demand=true
@@ -53,7 +64,7 @@ output "eDP-1" {
     mode "2880x1920@120.000"
     scale 2
     transform "normal"
-    position x=0 y=1080
+    position x=960 y=1080
     variable-refresh-rate on-demand=true
     hot-corners {
       off
@@ -116,6 +127,7 @@ cursor {
 
 window-rule {
     match app-id="firefox" title="^Picture-in-Picture$"
+    match app-id="chromium" title="^Picture-in-Picture$"
     open-floating true
 }
 
@@ -140,7 +152,7 @@ binds {
     // Application shortcuts
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return       hotkey-overlay-title="Open a Terminal: wezterm"      { spawn "wezterm"; }
-    Mod+Shift+Return hotkey-overlay-title="Open a Browser: firefox"       { spawn "firefox"; }
+    Mod+Shift+Return hotkey-overlay-title="Open a Browser: chromium"       { spawn "chromium"; }
     Mod+E            hotkey-overlay-title="Open a File Browser: nemo"     { spawn "nemo"; }
     Mod+Space        hotkey-overlay-title="Run an Application: rofi"      { spawn-sh "pkill rofi || rofi -show drun -theme ~/.local/share/rofi/minimal.rasi"; }
     Mod+C            hotkey-overlay-title="Run an Calculator: rofi"       { spawn-sh "pkill rofi || rofi -show calc -modi calc -no-show-match -no-sort -calc-command \"echo -n '{result}' | wl-copy\" -theme ~/.local/share/rofi/minimal.rasi"; }
